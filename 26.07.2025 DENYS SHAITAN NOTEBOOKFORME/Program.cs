@@ -316,6 +316,12 @@ namespace Classes
     //}
 
 
+
+
+
+
+
+
     //class Myclass
     //{
     //    private string field = null;
@@ -385,30 +391,30 @@ namespace Classes
 
     //class Rectangle
     //{
-    //    private double side1; //Поля що описують довжину сторін
+    //    private double side1;
     //    private double side2;
 
-    //    public Rectangle(double side1, double side2) //Конструктор
+    //    public Rectangle(double side1, double side2)
     //    {
     //        this.side1 = side1;
     //        this.side2 = side2;
     //    }
 
-    //    private double AreaCalculator() //Метод обчислення прямокутника
+    //    private double AreaCalculator()
     //    {
     //        return side1 * side2;
     //    }
 
-    //    private double PerimeterCalculator() //Метод обчислення прямокутника
+    //    private double PerimeterCalculator()
     //    {
     //        return 2 * (side1 + side2);
     //    }
 
-    //    public double Area //Властивість
+    //    public double Area
     //    {
     //        get { return AreaCalculator(); }
     //    }
-    //    public double Perimeter //Властивість
+    //    public double Perimeter
     //    {
     //        get { return PerimeterCalculator(); }
     //    }
@@ -425,13 +431,13 @@ namespace Classes
     //        Console.OutputEncoding = Encoding.Unicode;
 
 
-    //        Console.WriteLine("Enter the length of the first side:"); //Приймання першоі сторони
+    //        Console.WriteLine("Enter the length of the first side:");
     //        double side1 = Convert.ToDouble(Console.ReadLine());
 
-    //        Console.WriteLine("Enter the length of the second side:"); //Приймання другоі сторони 
+    //        Console.WriteLine("Enter the length of the second side:");
     //        double side2 = Convert.ToDouble(Console.ReadLine());
 
-    //        Rectangle rectangle = new Rectangle(side1, side2); //Створення єкземпляру класу з параметрами конструктора
+    //        Rectangle rectangle = new Rectangle(side1, side2);
 
     //        Console.WriteLine($"\nПлоща прямокутника : {rectangle.Area}");
     //        Console.WriteLine($"Периметр прямокутника: {rectangle.Perimeter}");
@@ -442,72 +448,96 @@ namespace Classes
 
     //class MyClass
     //{
-    //    public void Method()
-    //    {
-    //        Console.OutputEncoding = Encoding.Unicode;
+    //    private string field = null;
 
-    //        Console.WriteLine("Вызван метод класса MyClass");
+    //    public string Field
+    //    {
+    //        set { field = value; }
+    //        get { return field; }
     //    }
+
+    //    class Program
+    //    {
+    //        static void Main()
+    //        {
+    //            MyClass instance = new MyClass();
+
+    //            instance.Field = "HIIIIIIII";
+
+    //            Console.WriteLine(instance.Field);
+
+    //            while (true)
+    //            {
+    //                Console.WriteLine("Tap 1 if u want finish");
+    //                string input = Console.ReadLine();
+
+    //                if(input == "1")
+    //                {
+    //                    Console.WriteLine("U are finish program.See u!");
+    //                    break;
+    //                }
+    //                else
+    //                {
+    //                    Console.WriteLine("Try again");
+    //                    continue;
+    //                }
+    //            }
+    //        }
+
+    //    }
+
     //}
 
-    //class MyClass2
-    //{
-    //    // На 18 строке создаем метод с именем CallMethod, который принимает один аргумент типа MyClass и ничего не возвращает
-    //    public void CallMethod(MyClass my)
-    //    {
-    //        // В теле метода CallMethod, на 21 строке вызываем метод с именем Method аргумента my 
-    //        my.Method();
-    //    }
-    //}
-
-    //class Program
+    //class Prpgram Конструктор який визиває інші конструктори
     //{
     //    static void Main()
     //    {
-    //        MyClass my = new MyClass();
+    //        Point point = new Point("A");
+    //        Console.WriteLine("{0}.X = {1}, {0}.Y = {2}", point.Name, point.X, point.Y);
+    //    }
+    //}
 
-    //        MyClass2 my2 = new MyClass2();
+    //class Point
+    //{
+    //    private int x, y;
+    //    private string name;
 
-    //        my2.CallMethod(my);
+    //    public int X
+    //    {
+    //        get { return x; }
+    //    }
 
-    //        // Задержка
-    //        Console.ReadKey();
+    //    public int Y
+    //    {
+    //        get { return y; }
+    //    }
+
+    //    public string Name
+    //    {
+    //        get { return name; }
+    //    }
+
+    //    public Point(int x, int y)
+    //    {
+    //        Console.WriteLine("Constructor with 2parameters");
+    //        this.x = x;
+    //        this.y = y;
+    //    }
+
+    //    public Point(string name)
+    //        : this(300, 400)
+    //    {
+    //        Console.WriteLine("Constructor with 1 parametr");
+    //        this.name = name;
     //    }
     //}
 
 
-    class Robot
-    {
-        private string secret = "Im not robot";
-
-        public void SayHello()
-        {
-            Console.WriteLine("Hi,im robot");
-        }
-
-        public void SayVoice()
-        {
-            Console.WriteLine($"I have 1 litle secret,{secret}");
-        }
-    }
-    class Program
-    {
-        static void Main()
-        {
-            Robot robot = new Robot();
-
-            robot.SayHello();
-            robot.SayVoice();
-
-            Console.ReadKey();
-        }
-    }
-   
+    
 
 
 
 }
-
 
 
 
