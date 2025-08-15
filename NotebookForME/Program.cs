@@ -476,36 +476,160 @@ namespace Classes
     //}
 
 
-    class Robot
-    {
-        private string secret = "Im not robot";
+    //class Robot
+    //{
+    //    private string robotvoice = "im megatron";
 
-        public void SayHello()
-        {
-            Console.WriteLine("Hi,im robot");
-        }
+    //    public void SayHi()
+    //    {
+    //        Console.WriteLine("Hi.Im robot");
+    //    }
 
-        public void SayVoice()
-        {
-            Console.WriteLine($"I have 1 litle secret,{secret}");
-        }
-    }
-    class Program
-    {
-        static void Main()
-        {
-            Robot robot = new Robot();
+    //    public void SaySecret()
+    //    {
+    //        Console.WriteLine($"I have secret.{robotvoice}");
+    //    }
+    //}
 
-            robot.SayHello();
-            robot.SayVoice();
+    //class Program
+    //{
+    //    static void Main()
+    //    {
+    //        Robot robot = new Robot();
 
-            Console.ReadKey();
-        }
-    }
-   
+    //        robot.SayHi();
 
+    //        ////robot.SaySecret();
+    //    }
+    //}
 
 
+
+    //class Address
+    //{
+    //    private string index;
+    //    private string country;
+    //    private string city;
+    //    private string street;
+    //    private string house;
+    //    private string apartment;
+
+    //    public string Index
+    //    {
+    //        get { return index; }
+    //        set { index = value; }
+
+    //    }
+    //    public string Country
+    //    {
+    //        get { return country; }
+    //        set { country = value; }
+    //    }
+    //    public string City
+    //    {
+    //        get { return city; }
+    //        set { city = value; }
+    //    }
+    //    public string Street
+    //    {
+    //        get { return street; }
+    //        set { street = value; }
+    //    }
+    //    public string House
+    //    {
+    //        get { return house; }
+    //        set { house = value; }
+    //    }
+    //    public string Apartment
+    //    {
+    //        get { return apartment; }
+    //        set { apartment = value; }
+    //    }
+
+    //}
+
+    //class Program
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        Address address = new Address();
+
+    //        address.Index = "2000";
+    //        address.Country = "Denmark";
+    //        address.City = "Frederiksberg";
+    //        address.Street = "Street Danish";
+    //        address.House = "House no 5";
+    //        address.Apartment = "22";
+
+    //        Console.WriteLine(address.Index);
+    //        Console.WriteLine(address.Country);
+    //        Console.WriteLine(address.City);
+    //        Console.WriteLine(address.Street);
+    //        Console.WriteLine(address.House);
+    //        Console.WriteLine(address.Apartment);
+
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+    //partial class PartialClass
+    //{
+    //    partial void PartialMethod();
+
+    //    partial void MyMethod();
+    //}
+
+    //partial class PartialClass
+    //{
+    //    partial void PartialMethod()
+    //    {
+    //        Console.WriteLine("Called partial method PartialMethod");
+    //    }
+    //    public void CallPartialMethod()
+    //    {
+    //        PartialMethod();
+
+    //        MyMethod();
+    //    }
+    //}
+
+    //class Program
+    //{
+    //    static void Main()
+    //    {
+    //        PartialClass instance = new PartialClass();
+
+    //        instance.CallPartialMethod();
+    //    }
+    //}
+
+   //class MyClass //Encapsuulation
+   // {
+   //     MyClass my = null;
+
+   //     private void Method()
+   //     {
+   //         Console.WriteLine("HIIIIll");
+   //     }
+
+   //     public void CallMethod()
+   //     {
+   //         my = new MyClass();
+
+   //         my.Method();
+   //     }
+   // }
+
+   // class Program
+   // {
+   //     static void Main(string[] args)
+   //     {
+   //         MyClass my = new MyClass();
+
+   //         my.CallMethod();
+   //     }
+   // }
 }
 
 
